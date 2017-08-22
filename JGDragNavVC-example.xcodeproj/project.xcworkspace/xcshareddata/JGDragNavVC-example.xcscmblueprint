@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "441AB7371B721434F960ACB603360F300FF05653",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "BA4F517751CBDE5BFA5C56C5544365043AC6B0BC" : 9223372036854775807,
+    "441AB7371B721434F960ACB603360F300FF05653" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "6D6523C2-2F73-43B4-BD8C-95B5781529CB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "BA4F517751CBDE5BFA5C56C5544365043AC6B0BC" : "",
+    "441AB7371B721434F960ACB603360F300FF05653" : "JGDragNavVC\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "JGDragNavVC-example",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "JGDragNavVC-example.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/18137983396\/JGDragNavVC.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "441AB7371B721434F960ACB603360F300FF05653"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/18137983396\/JGDragNavVC",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BA4F517751CBDE5BFA5C56C5544365043AC6B0BC"
+    }
+  ]
+}
