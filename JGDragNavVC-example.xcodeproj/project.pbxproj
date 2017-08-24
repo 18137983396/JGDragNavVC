@@ -15,8 +15,8 @@
 		81A4C0E41F4AE2DB00DFA654 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81A4C0E21F4AE2DB00DFA654 /* LaunchScreen.storyboard */; };
 		81A4C0EF1F4AE2DB00DFA654 /* JGDragNavVC_exampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A4C0EE1F4AE2DB00DFA654 /* JGDragNavVC_exampleTests.m */; };
 		81A4C0FA1F4AE2DB00DFA654 /* JGDragNavVC_exampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A4C0F91F4AE2DB00DFA654 /* JGDragNavVC_exampleUITests.m */; };
-		81A4C10B1F4AE33500DFA654 /* PushController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A4C1081F4AE33500DFA654 /* PushController.m */; };
-		81A4C10C1F4AE33500DFA654 /* PushController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A4C10A1F4AE33500DFA654 /* PushController1.m */; };
+		81A4C10B1F4AE33500DFA654 /* FirstVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A4C1081F4AE33500DFA654 /* FirstVC.m */; };
+		81A4C10C1F4AE33500DFA654 /* SecondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A4C10A1F4AE33500DFA654 /* SecondVC.m */; };
 		81A4C1101F4AE34000DFA654 /* JGDragNavVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A4C10F1F4AE34000DFA654 /* JGDragNavVC.m */; };
 /* End PBXBuildFile section */
 
@@ -54,10 +54,10 @@
 		81A4C0F51F4AE2DB00DFA654 /* JGDragNavVC-exampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JGDragNavVC-exampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81A4C0F91F4AE2DB00DFA654 /* JGDragNavVC_exampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JGDragNavVC_exampleUITests.m; sourceTree = "<group>"; };
 		81A4C0FB1F4AE2DB00DFA654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		81A4C1071F4AE33500DFA654 /* PushController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushController.h; sourceTree = "<group>"; };
-		81A4C1081F4AE33500DFA654 /* PushController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushController.m; sourceTree = "<group>"; };
-		81A4C1091F4AE33500DFA654 /* PushController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushController1.h; sourceTree = "<group>"; };
-		81A4C10A1F4AE33500DFA654 /* PushController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushController1.m; sourceTree = "<group>"; };
+		81A4C1071F4AE33500DFA654 /* FirstVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstVC.h; sourceTree = "<group>"; };
+		81A4C1081F4AE33500DFA654 /* FirstVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstVC.m; sourceTree = "<group>"; };
+		81A4C1091F4AE33500DFA654 /* SecondVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondVC.h; sourceTree = "<group>"; };
+		81A4C10A1F4AE33500DFA654 /* SecondVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondVC.m; sourceTree = "<group>"; };
 		81A4C10E1F4AE34000DFA654 /* JGDragNavVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGDragNavVC.h; sourceTree = "<group>"; };
 		81A4C10F1F4AE34000DFA654 /* JGDragNavVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGDragNavVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,10 +113,10 @@
 			children = (
 				81A4C0D71F4AE2DB00DFA654 /* AppDelegate.h */,
 				81A4C0D81F4AE2DB00DFA654 /* AppDelegate.m */,
-				81A4C1071F4AE33500DFA654 /* PushController.h */,
-				81A4C1081F4AE33500DFA654 /* PushController.m */,
-				81A4C1091F4AE33500DFA654 /* PushController1.h */,
-				81A4C10A1F4AE33500DFA654 /* PushController1.m */,
+				81A4C1071F4AE33500DFA654 /* FirstVC.h */,
+				81A4C1081F4AE33500DFA654 /* FirstVC.m */,
+				81A4C1091F4AE33500DFA654 /* SecondVC.h */,
+				81A4C10A1F4AE33500DFA654 /* SecondVC.m */,
 				81A4C0DA1F4AE2DB00DFA654 /* ViewController.h */,
 				81A4C0DB1F4AE2DB00DFA654 /* ViewController.m */,
 				81A4C0DD1F4AE2DB00DFA654 /* Main.storyboard */,
@@ -301,8 +301,8 @@
 				81A4C1101F4AE34000DFA654 /* JGDragNavVC.m in Sources */,
 				81A4C0D91F4AE2DB00DFA654 /* AppDelegate.m in Sources */,
 				81A4C0D61F4AE2DB00DFA654 /* main.m in Sources */,
-				81A4C10C1F4AE33500DFA654 /* PushController1.m in Sources */,
-				81A4C10B1F4AE33500DFA654 /* PushController.m in Sources */,
+				81A4C10C1F4AE33500DFA654 /* SecondVC.m in Sources */,
+				81A4C10B1F4AE33500DFA654 /* FirstVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,6 +540,7 @@
 				81A4C1001F4AE2DB00DFA654 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		81A4C1011F4AE2DB00DFA654 /* Build configuration list for PBXNativeTarget "JGDragNavVC-exampleTests" */ = {
 			isa = XCConfigurationList;
@@ -548,6 +549,7 @@
 				81A4C1031F4AE2DB00DFA654 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		81A4C1041F4AE2DB00DFA654 /* Build configuration list for PBXNativeTarget "JGDragNavVC-exampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -556,6 +558,7 @@
 				81A4C1061F4AE2DB00DFA654 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

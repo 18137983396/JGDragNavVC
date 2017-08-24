@@ -28,7 +28,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     [self setUpConfiguration];
 }
 
@@ -220,8 +219,6 @@
     
     float scale = (x * 0.05f / _maxWidth) + 0.95f;
     float alpha = 0.4f - (x * 0.4f / _maxWidth);
-//    NSLog(@"scale=%f",scale);
-//    NSLog(@"alpha=%f",alpha);
     _lastScreenShotView.transform = CGAffineTransformMakeScale(scale, scale);
     _blackMask.alpha = alpha;
 }

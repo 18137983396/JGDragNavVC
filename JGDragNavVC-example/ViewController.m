@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "JGDragNavVC.h"
-#import "PushController.h"
+#import "FirstVC.h"
 
 @interface ViewController ()
 
@@ -18,8 +18,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    
+    [self setUpUI];
+}
+
+#pragma mark - UI
+- (void)setUpUI {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = CGRectMake((self.view.frame.size.width - 100)/2, (self.view.frame.size.height - 50)/2, 100, 50);
     [button setTitle:@"click" forState:UIControlStateNormal];
@@ -28,15 +31,15 @@
     [self.view addSubview:button];
 }
 
+#pragma mark - Action
 - (void)buttonClickAction {
-    PushController *pushVC = [[PushController alloc] init];
+    FirstVC *pushVC = [[FirstVC alloc] init];
     JGDragNavVC *nav = [[JGDragNavVC alloc] initWithRootViewController:pushVC];
     [self presentViewController:nav animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 
