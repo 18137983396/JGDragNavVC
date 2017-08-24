@@ -29,19 +29,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self setUpConfiguration];
+}
+
+#pragma mark - 配置信息
+- (void)setUpConfiguration {
     
     self.interactivePopGestureRecognizer.enabled = NO;
     _enableDragClose = YES; //是否开启拖拽功能 - 默认开启
     _tempEnableDragBack = YES;
     
     if (_enableDragClose) {
-    _maxWidth = [[UIScreen mainScreen] bounds].size.width;
-    _screenShotList = [[NSMutableArray alloc] init];
-    _recognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(paningGestureReceive:)];
-    _recognizer.delaysTouchesBegan = NO;        //  不延迟处理 - 延迟处理会导致各种点击变的奇怪
-    _recognizer.cancelsTouchesInView = YES;     //  响应手势后吞掉事件 - 向其他view送cancel事件取消处理
-    _recognizer.enabled = NO;                   //  默认不启用 - 只有vc大于1时才启用返回拖拽功能
-    [self.view addGestureRecognizer:_recognizer];
+        _maxWidth = [[UIScreen mainScreen] bounds].size.width;
+        _screenShotList = [[NSMutableArray alloc] init];
+        _recognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(paningGestureReceive:)];
+        _recognizer.delaysTouchesBegan = NO;        //  不延迟处理 - 延迟处理会导致各种点击变的奇怪
+        _recognizer.cancelsTouchesInView = YES;     //  响应手势后吞掉事件 - 向其他view送cancel事件取消处理
+        _recognizer.enabled = NO;                   //  默认不启用 - 只有vc大于1时才启用返回拖拽功能
+        [self.view addGestureRecognizer:_recognizer];
     }
     
     [self.navigationBar setTranslucent:NO];
@@ -73,6 +78,7 @@
     return pop;
 }
 
+#pragma mark - 截屏
 - (UIImage *)capture {
     
     UIView * pView = nil;
@@ -112,6 +118,7 @@
     }
 }
 
+#pragma mark - 手势响应事件
 - (void)paningGestureReceive:(UIPanGestureRecognizer *)recoginzer {
     
     [[NSNotificationCenter defaultCenter] postNotification:[NSNotification notificationWithName:@"navigationController" object:nil]];
@@ -126,16 +133,12 @@
     
     //  获取坐标
     CGPoint touchPoint = [recoginzer locationInView:[[UIApplication sharedApplication] keyWindow]];
-//    NSLog(@"touchPoint = %f",touchPoint.x);
     
     ///<    开始拖拽
     if (recoginzer.state == UIGestureRecognizerStateBegan) {
         
         _isMoving = YES;
         _startTouch = touchPoint;
-//        NSLog(@"_startTouch = %f",_startTouch.x);
-//        
-//        NSLog(@"Began Began");
         
         ///<    背景视图              > 当前视图
         ///<    上个视图的截屏 > 暗视图 > 当前视图
@@ -176,8 +179,6 @@
         ///<    拖拽取消
     }else if (recoginzer.state == UIGestureRecognizerStateCancelled){
         
-//        NSLog(@"Cancell Cancell");
-        
         [self animationMoveToOrigin];
         [self onDragBackFinish:NO];
         return;
@@ -185,8 +186,6 @@
     ///<    拖拽中
     if (_isMoving) {
         [self moveViewWithX:touchPoint.x - _startTouch.x];
-//        NSLog(@"_isMoving _isMoving");
-        
     }
 }
 
